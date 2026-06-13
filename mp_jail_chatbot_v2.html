@@ -323,7 +323,7 @@ async function send(){
       raw=d.choices?.[0]?.message?.content || d.content?.[0]?.text || d.response || '';
     } else {
       // Direct Groq API
-      const r=await fetch('https://https://mpjailbot.chetan4175.workers.dev',{
+      const r=await fetch('https://mpjailbot.chetan4175.workers.dev',{
         method:'POST',
         headers:{'Content-Type':'application/json','Authorization':'Bearer '+CFG.groqKey},
         body:JSON.stringify({model:'llama-3.3-70b-versatile',max_tokens:800,temperature:0.3,
