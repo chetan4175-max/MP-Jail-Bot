@@ -325,7 +325,7 @@ async function send(){
       // Direct Groq API
       const r=await fetch('https://mpjailbot.chetan4175.workers.dev',{
         method:'POST',
-        headers:{'Content-Type':'application/json','Authorization':'Bearer YOUR_GROQ_API_KEY'},
+        headers:{'Content-Type':'Authorization':'Bearer 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'},
         body:JSON.stringify({model:'llama-3.3-70b-versatile',max_tokens:800,temperature:0.3,
           messages:[{role:'system',content:SYS},...hist.slice(-12)]})
       });
